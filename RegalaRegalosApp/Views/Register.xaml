@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RegalaRegalosApp.Views.Register">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto" 
+              Padding="40,40,40,0" 
+              VerticalOptions="CenterAndExpand"
+              ColumnDefinitions="*,*">
+
+            <Image Source="logotipo.png"
+                   WidthRequest="150"
+                   HeightRequest="150"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   VerticalOptions="Start"/>
+
+            <Label HorizontalOptions="Center"
+                   Text="REGISTRATE" 
+                   TextColor="#686464"
+                   FontSize="20"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   VerticalOptions="Start"/>
+
+            <StackLayout Grid.Row="3"
+                         Grid.Column="0"
+                         Grid.ColumnSpan="2"
+                         VerticalOptions="Center">
+                <Grid>
+                    <Entry Placeholder="Nombre Completo" 
+                   TextColor="#AAA8A8"
+                   FontSize="Small"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"></Entry>
+                    <Entry Placeholder="Celular" 
+                   TextColor="#AAA8A8"
+                   FontSize="Small"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"></Entry>
+                    <Entry Placeholder="Correo electrónico" 
+                   TextColor="#AAA8A8"
+                   FontSize="Small"
+                   Grid.Row="3"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"></Entry>
+                    <Entry Placeholder="Contraseña" 
+                   IsPassword="True" 
+                   TextColor="#AAA8A8"
+                   FontSize="Small"
+                   Grid.Row="4"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"></Entry>
+                </Grid>
+                
+                
+            </StackLayout>
+
+            <Button
+                VerticalOptions="Center"
+                Text="CREAR"
+                TextColor="White"
+                BackgroundColor="#FF5C5C"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                Grid.Row="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

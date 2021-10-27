@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RegalaRegalosApp.Views.Welcome">
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+              VerticalOptions="CenterAndExpand"
+              ColumnDefinitions="*,*"
+              Padding="40,60,40,0">
+            <Image
+                Source="logotipofull.png"
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Aspect="AspectFill"
+                HeightRequest="480"
+                VerticalOptions="Start"/>
+            <Button
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                VerticalOptions="Center"
+                Text="INICIAR SESIÓN"
+                TextColor="White"
+                BackgroundColor="#FF5C5C"
+                BorderWidth="1.5"
+                CornerRadius="50"></Button>
+            <Button
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                VerticalOptions="Center"
+                Text="CREAR UNA CUENTA"
+                TextColor="White"
+                BackgroundColor="#686464"
+                BorderWidth="1.5"
+                CornerRadius="50"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

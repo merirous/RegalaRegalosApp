@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RegalaRegalosApp.Views.Osos">
+    <Grid RowDefinitions="*">
+        <ScrollView Grid.Row="0">
+            <Grid ColumnDefinitions="*,*,*"
+                  RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+                  Padding="20,0,20,0">
+
+                <Image Grid.Row="0"
+                           Grid.Column="0"
+                           HorizontalOptions="Start"
+                           Source="burguer.png"/>
+
+                <Image Grid.Row="0"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           VerticalOptions="Center"
+                           WidthRequest="55"
+                           HeightRequest="55"
+                           Source="logotipo.png"/>
+                
+                <Label Grid.Row="0"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="3"
+                           VerticalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           FontSize="14"
+                           FontAttributes="Bold">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="        REGALA " TextColor="#FF5C5C"/>
+                            <Span Text="regalos" TextColor="#686464"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <SearchBar Grid.Row="3" Grid.Column="0"
+                               Grid.ColumnSpan="3" Placeholder="Búsqueda"
+                               Margin="0,0,30,0"/>
+                <Label Grid.Row="4"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="3"
+                           Text="Category"
+                           Padding="5,10,0,0"
+                           FontSize="25"/>
+                
+                <CollectionView Grid.Row="5" Grid.Column="0"
+                                    Grid.ColumnSpan="3"
+                                    Margin="0,20"
+                                    VerticalOptions="StartAndExpand"
+                                    ItemsLayout="HorizontalList"
+                                    HeightRequest="160">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Margin="8,0">
+                                <Frame HasShadow="False"
+                                           WidthRequest="80"
+                                           VerticalOptions="FillAndExpand"
+                                           HorizontalOptions="Start"
+                                           CornerRadius="20">
+                                    <Grid HorizontalOptions="Center"
+                                              RowDefinitions="*,Auto">
+                                        <Image Grid.Row="0"
+                                                   HorizontalOptions="Center"
+                                                   Source="oso.png"
+                                                   Margin="0,20,0,10"
+                                                   WidthRequest="50"/>
+                                        <Label Grid.Row="1"
+                                                   Text="OSOS"
+                                                   FontAttributes="Bold"
+                                                   VerticalOptions="End"
+                                                   HorizontalOptions="Center"
+                                                   TextColor="#D3596F"
+                                                   FontSize="15"/>
+
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </Grid>
+            
+        </ScrollView>
+    </Grid>
+</ContentPage>
